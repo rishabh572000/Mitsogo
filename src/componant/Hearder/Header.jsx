@@ -7,6 +7,9 @@ import { VscBellDot } from 'react-icons/vsc';
 import profile from '../Media/profile-pic-01.jpg';
 import { useSelector, useDispatch } from 'react-redux';
 import { slider} from '../Action';
+import { Popover } from 'antd';
+import Popup from './Popup';
+import NotificationPopup from './NotificationPopup';
 
 export default function Header() {
   const dispatch = useDispatch();
@@ -14,21 +17,33 @@ export default function Header() {
   const myState = useSelector((state)=>state.changeState);
   var sliderStatus=myState===1 ? 'activeNav':'';
 
+  
+
 return (
   <>
   <div className={`header ${sliderStatus}`}>
     <div className='left'>
-        <icon className={`header ${sliderStatus}`} onClick={()=>dispatch(slider())}><RiBarChartHorizontalLine /></icon>
+        <icon className={`headerlefticon ${sliderStatus}`} onClick={()=>dispatch(slider())}><RiBarChartHorizontalLine /></icon>
         <form>
-        <span><AiOutlineSearch /></span>
+        <span id='mohan'><AiOutlineSearch /></span>
         <input type='text' name='search' placeholder='Search Transictions, invoices or help'/>
         </form>
     </div>
     <div className='right'>
+
+    <Popover content={NotificationPopup} overlayStyle={{
+    width: "300px"
+  }}>
         <icon><VscBellDot /></icon>
+    </Popover>
+    
+    <Popover content={Popup}>
+      <div className='popupuser'>
         <p>John Doe</p>
         <icon id='arraw'><IoIosArrowDown /></icon>
         <img src={profile} alt='img' />
+      </div>
+    </Popover>
     </div>
   </div>
   </>

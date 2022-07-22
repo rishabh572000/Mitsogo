@@ -8,7 +8,7 @@
 }
 .firstsection{
     width: 100%;
-    padding: 24px 40px;
+    padding: 94px 40px 24px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -199,13 +199,40 @@
     top: -90px;
 }
 
+@media screen and (max-width: 980px){
+    .body{
+        padding-left: 0;
+    }
+    .firstsection{
+        // padding: 24px 0px;
+        padding: 94px 0px 24px 0px;
+    }
+    .graph{
+        width: 100%;
+    }
+    .graphone{
+        width: 90%;
+    }
+    .profile{
+        width: 90%
+    }
+    .table{
+        width: 90%;
+        overflow:scroll;
+        top: 0;
+    }
+    .video{
+        width: 90%;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .body{
         padding-left: 0;
     }
     .firstsection{
-        padding: 24px 0px;
+        // padding: 24px 0px;
+        padding: 94px 0px 24px 0px;
     }
     .graph{
         width: 100%;

@@ -8,21 +8,24 @@ const userData=[
         name:'Drew James',
         country:'United States',
         mobile: 8715674877,
-        img: profile1
+        img: profile1,
+        time:'2 min ago'
     },
     {
         id:2,
         name:'Bavid Kames',
         country:'United States',
         mobile: 8715674877,
-        img: profile3
+        img: profile3,
+        time:'5 min ago'
     },
     {
         id:3,
         name:'Bavid Kames',
         country:'United States',
         mobile: 8715674877,
-        img: profile4
+        img: profile4,
+        time:'10 min ago'
     }
 ];
 export default userData;

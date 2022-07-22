@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function User(props) {
-  
+  const mobile = props.val.mobile;
   return (
     <>
      <div className='user' key={props.id}>
@@ -12,7 +12,7 @@ export default function User(props) {
                 <p>{props.val.country}</p>
             </div>
          </div>
-        <p id='mobile'>Mobile : {props.val.mobile}</p>
+        <p id='mobile'>{props.time=='notification'?props.val.time: `Mobile: ${mobile}`}</p>
      </div>
     </>
   )

@@ -1,12 +1,11 @@
 .leftHeader{
     width: 12rem;
-    // background: #43425D;
-    background: #43425d;
+    background: #43425D;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
-    // z-index: 10;
+    z-index: 100;
 }
 #activeNav{
     width: 0;
@@ -18,10 +17,6 @@
     padding: 26px 20px 20px 20px;
     font-weight: 800;
 }
-// .leftHeader #activeNav {
-//     width: 0;
-//     display: none;
-// }
 .leftHeader .items{
     z-index: 200;
 }
@@ -59,12 +54,23 @@
 
 }
 
+@media screen and (max-width: 980px){
+    #activeNav{
+        width: 12rem;
+        display: block;
+        z-index: 100;
+    }
+    .leftHeader{
+        width: 0;
+        display: none;
+    }
+}
 
 @media screen and (max-width: 480px) {
     #activeNav{
         width: 12rem;
         display: block;
-        z-index: 10;
+        z-index: 100;
     }
     .leftHeader{
         width: 0;

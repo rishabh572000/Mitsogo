@@ -5,20 +5,31 @@ import Header from './componant/Hearder/Header';
 import Body from './componant/Body.jsx/Body';
 import store from './componant/store';
 import {Provider} from 'react-redux';
+import Loading from './componant/Loading/Loading';
+import React, {useState} from 'react';
 
-// store.subscribe(()=> console.log(store.getStore()))
 function App() {
+
+  const [loadingOf, setLoadingOf]=useState(true);
+  setTimeout(() => {
+    setLoadingOf(false)
+  }, "4000")
 
 
   return (
     <>
-    <Provider store={store}>
-    <div className="App">
-      <LeftDrawer />
-      <Header />
-      <Body />
-    </div>
-    </Provider>
+    {
+      loadingOf?<Loading />: <Provider store={store}>
+      <div className="App">
+        <LeftDrawer />
+        <Header />
+        <Body />
+      </div>
+      </Provider>
+    }
+    
+
+   
     </>
   );
 }

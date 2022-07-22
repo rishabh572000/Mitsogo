@@ -1,5 +1,7 @@
 .header{
     width: 100%;
+    position: fixed;
+    z-index: 10;
     padding-left: 12rem;
     background: rgb(255, 255, 255);
     box-shadow: 0px 2px 6px #0000000A;
@@ -16,17 +18,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 12;
+    position: relative;
 }
-.header .left icon{
-    padding: 20px;
-    font-size: 1.2rem;
+.header .left .headerlefticon{
+    position: relative;
+    padding: 0 25px;
+    font-size: 20px;
+    box-shadow: none;
+    color: #4D4F5C;
+    background: #fff;
 }
+
 .header .left form{
     display: flex;
 }
 .header .left form span{
     font-size: 1.1rem;
-    // z-index: 10;
 }
 .header .left form input{
     width: 20rem;
@@ -52,7 +60,13 @@
     overflow: hidden;
     position: relative;
     right: 40px;
-    // padding-right: 40px;
+}
+
+.header .right .popupuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .header .right p{
     padding: 10px;
@@ -64,7 +78,35 @@
     padding-right: 50px;
 }
 
+//popup
+.popup .item{
+    display: flex;
+    align-items: center;
+}
+.popup .item span{
+        padding-right: 15px;
+        margin-top: -10px;
+}
+.popup .item p{
+    font-size: 16px;
+}
 
+@media screen and (max-width: 980px){
+    .header{
+        width: 100%;
+        padding-left: 0;
+    }
+    .header .left form input{
+        width: 0;
+    }
+    .header.activeNav{
+        padding-left: 0;
+    }
+    .left .activeNav{
+        position: relative;
+        left: 12rem !important;
+    }
+}
 
 @media screen and (max-width: 480px){
     .header{
@@ -81,4 +123,14 @@
         position: relative;
         left: 12rem !important;
     }
+    .popupuser p{
+        display: none;
+    }
+    .popupuser #arraw{
+        display: none;
+    }
+    .right icon{
+        padding-right: 50px;
+    }
+   
 }

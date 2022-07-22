@@ -42,7 +42,7 @@ export default function GraphOne() {
       .then((response) => response.json())
       .then((json) => setDataset(json))
       .catch((error) => {
-        console.log('fetch data failed', error);
+        // console.log('fetch data failed', error);
       });
   };
   const config2 = {
