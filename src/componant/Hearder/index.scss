@@ -1,0 +1,84 @@
+.header{
+    width: 100%;
+    padding-left: 12rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 2px 6px #0000000A;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.header.activeNav{
+    padding-left: 0;
+}
+.header .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .left icon{
+    padding: 20px;
+    font-size: 1.2rem;
+}
+.header .left form{
+    display: flex;
+}
+.header .left form span{
+    font-size: 1.1rem;
+    // z-index: 10;
+}
+.header .left form input{
+    width: 20rem;
+    border: none;
+    outline: none;
+    position: relative;
+    top: -3px;
+    left: 8px;
+}
+.header .left form input::placeholder{
+    color: #4D4F5C;
+}
+.header .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.header .right img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    right: 40px;
+    // padding-right: 40px;
+}
+.header .right p{
+    padding: 10px;
+    position: relative;
+    top: 4px;
+    padding-left: 20px;
+}
+.header .right #arraw{
+    padding-right: 50px;
+}
+
+
+
+@media screen and (max-width: 480px){
+    .header{
+        width: 100%;
+        padding-left: 0;
+    }
+    .header .left form input{
+        width: 0;
+    }
+    .header.activeNav{
+        padding-left: 0;
+    }
+    .left .activeNav{
+        position: relative;
+        left: 12rem !important;
+    }
+}

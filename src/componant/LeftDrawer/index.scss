@@ -1,0 +1,74 @@
+.leftHeader{
+    width: 12rem;
+    // background: #43425D;
+    background: #43425d;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    // z-index: 10;
+}
+#activeNav{
+    width: 0;
+    display: none;
+}
+.leftHeader .title{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 26px 20px 20px 20px;
+    font-weight: 800;
+}
+// .leftHeader #activeNav {
+//     width: 0;
+//     display: none;
+// }
+.leftHeader .items{
+    z-index: 200;
+}
+.leftHeader .items .item{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 12px 20px 12px 20px;
+    cursor: pointer;
+}
+.leftHeader .items .item.active{
+    background: #3C3B54;
+    border-left: 5px solid #A3A0FB;
+    // position: absolute;
+    width: 12rem;
+}
+.leftHeader  #active{
+    background: #3C3B54;
+    border-left: 5px solid #A3A0FB;
+}
+.leftHeader .items .item icon{
+    font-size: 1.1rem;
+}
+.leftHeader .items .item.active icon{
+    font-size: 1.1rem;
+    color: #A3A0FB;
+}
+.leftHeader .items .item p{
+    line-height: 20px;
+    padding-left:15px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.leftHeader .items .item:hover{
+
+}
+
+
+@media screen and (max-width: 480px) {
+    #activeNav{
+        width: 12rem;
+        display: block;
+        z-index: 10;
+    }
+    .leftHeader{
+        width: 0;
+        display: none;
+    }
+    
+}
