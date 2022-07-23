@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Mitsogo/static/css/main.1ff30dae.css",
-    "main.js": "/Mitsogo/static/js/main.d7bbb764.js",
+    "main.css": "/Mitsogo/static/css/main.78a7517d.css",
+    "main.js": "/Mitsogo/static/js/main.fd4ef7ae.js",
     "static/js/787.68314468.chunk.js": "/Mitsogo/static/js/787.68314468.chunk.js",
     "static/media/file.mp4": "/Mitsogo/static/media/file.67e55287a2b3b659fffd.mp4",
     "static/media/profile-pic-04.jpg": "/Mitsogo/static/media/profile-pic-04.e8d9dfa8dec7fccc49d6.jpg",
@@ -9,12 +9,12 @@
     "static/media/profile-pic-02.jpg": "/Mitsogo/static/media/profile-pic-02.d8a1e801ff955fa2ede8.jpg",
     "static/media/profile-pic-03.jpg": "/Mitsogo/static/media/profile-pic-03.b3d6694f95fd6c43086f.jpg",
     "index.html": "/Mitsogo/index.html",
-    "main.1ff30dae.css.map": "/Mitsogo/static/css/main.1ff30dae.css.map",
-    "main.d7bbb764.js.map": "/Mitsogo/static/js/main.d7bbb764.js.map",
+    "main.78a7517d.css.map": "/Mitsogo/static/css/main.78a7517d.css.map",
+    "main.fd4ef7ae.js.map": "/Mitsogo/static/js/main.fd4ef7ae.js.map",
     "787.68314468.chunk.js.map": "/Mitsogo/static/js/787.68314468.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ff30dae.css",
-    "static/js/main.d7bbb764.js"
+    "static/css/main.78a7517d.css",
+    "static/js/main.fd4ef7ae.js"
   ]
 }
